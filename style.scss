@@ -67,3 +67,44 @@ body {
         border: none;
     }
 }
+
+.game {
+    height: 556px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    background: #000915;
+
+    &__item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+
+    &__item__left {
+        grid-column: span 4;
+        background-image: url(img/game_one.png);
+    }
+
+    &__item__middle {
+        grid-column: span 4;
+        background-image: url(img/game_two.png);
+    }
+
+    &__item__right {
+        grid-column: span 4;
+        background-image: url(img/game_three.png);
+    }
+
+    &__link {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        /* 133.333% */
+    }
+}
