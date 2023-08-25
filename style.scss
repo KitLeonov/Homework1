@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 1024px;
+    background-image: url(img/bg_top_section.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__heading {
+        color: #FFF;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 217px;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        /* 177.778% */
+        padding-bottom: 44px;
+
+        &-big {
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+
+    &__button {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 30px;
+        background: #9C0332;
+        padding: 13.3px 74.3px;
+        border: none;
+    }
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    background: #000915;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    &__item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 236px 262px 32px 32px;
+    }
+
+    &__item__left {
+        grid-column: span 4;
+        background-image: url(img/game_one.png);
+    }
+
+    &__item__middle {
+        grid-column: span 4;
+        background-image: url(img/game_two.png);
+    }
+
+    &__item__right {
+        grid-column: span 4;
+        background-image: url(img/game_three.png);
+    }
+
+    &__link {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        /* 133.333% */
+    }
+}
