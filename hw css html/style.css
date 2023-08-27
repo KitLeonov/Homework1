@@ -97,4 +97,37 @@ body {
   font-weight: 600;
   line-height: 32px;
   /* 133.333% */
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/BG_top_mobile.jpg);
+  }
+  .top__heading {
+    font-size: 32px;
+    padding-top: 238px;
+  }
+  .top__text {
+    font-size: 14px;
+  }
+  .top__text-big {
+    font-size: 14px;
+  }
+  .game {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .game__link {
+    font-size: 24px;
+  }
+  .game__item {
+    padding: 236px 248px 32px 17px;
+  }
 }/*# sourceMappingURL=style.css.map */

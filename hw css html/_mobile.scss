@@ -1,0 +1,40 @@
+@media (min-width:374px) and (max-width:767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    .top {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(img/BG_top_mobile.jpg);
+
+        &__heading {
+            font-size: 32px;
+            padding-top: 238px;
+        }
+
+        &__text {
+            font-size: 14px;
+
+            &-big {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 1fr);
+
+        &__link {
+            font-size: 24px;
+        }
+
+        &__item {
+            padding: 236px 248px 32px 17px;
+        }
+    }
+}
