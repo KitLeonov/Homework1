@@ -39,7 +39,7 @@ alert(`Остаток от деления ${divisionRemainder}`);
 
 Задание 7
 let num = 1;
-num = num + 5;
+num += 5;
 num = num - 3;
 num = num * 7;
 num = num / 3;
@@ -76,7 +76,7 @@ const user = {
 
 user['city of residence'] = String('Moscow');
 
-user['age'] = Number('20');
+user.age = 20;
 
 Задание 9.3
 const user = {
