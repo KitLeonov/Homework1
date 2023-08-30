@@ -64,6 +64,9 @@ body {
   padding: 13.3px 74.3px;
   border: none;
 }
+.top__button:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+}
 
 .game {
   display: grid;
@@ -74,22 +77,46 @@ body {
   padding-bottom: 128px;
 }
 .game__item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 236px 262px 32px 32px;
 }
 .game__item__left {
   grid-column: span 4;
   background-image: url(img/game_one.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.game__item__left:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+  outline: 3px solid #44D2FF;
+  border-radius: 16px;
 }
 .game__item__middle {
   grid-column: span 4;
   background-image: url(img/game_two.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.game__item__middle:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+  outline: 3px solid #44D2FF;
+  border-radius: 16px;
 }
 .game__item__right {
   grid-column: span 4;
   background-image: url(img/game_three.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.game__item__right:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+  outline: 3px solid #44D2FF;
+  border-radius: 16px;
 }
 .game__link {
   color: #FFF;
