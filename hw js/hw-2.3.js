@@ -142,7 +142,3 @@ if (/iPhone|iPad|iPod/i.test(navigator.userAgent) && clientDeviceYear >= 2015) {
 
 } else alert("Вы используете ПК.")
 */
-
-
-
-
