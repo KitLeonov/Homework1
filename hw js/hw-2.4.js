@@ -17,3 +17,33 @@
 
 //Задание 4
 
+//const salary = {
+//    'Коля': '200',
+//    'Вася': '300',
+//    'Петя': '400'
+//};
+//
+//for (let obj in salary) {
+//    console.log(`${obj} — зарплата ${salary[obj]} долларов`);
+//}
+
+//Задание 5
+
+//let n = 1000;
+//let num = 0;
+
+//while (n > 50) {
+//    num++;
+//    n /= 2;
+//};
+
+//console.log(n);
+//console.log(num);
+
+//Задание 6
+
+//for (let numberFriday = 2; numberFriday < 31; numberFriday++) {
+//    const element = array[index];
+//
+//}
+
