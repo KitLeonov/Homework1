@@ -37,13 +37,14 @@ body {
     }
 
     &__text {
+        width: 481px;
         color: #FFF;
         font-size: 18px;
         font-style: normal;
         font-weight: 300;
         line-height: 32px;
         /* 177.778% */
-        padding-bottom: 44px;
+        padding-bottom: 43px;
 
         &-big {
             color: #FFF;
@@ -65,6 +66,10 @@ body {
         background: #9C0332;
         padding: 13.3px 74.3px;
         border: none;
+
+        &:hover {
+            cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+        }
     }
 }
 
@@ -77,25 +82,52 @@ body {
     padding-bottom: 128px;
 
     &__item {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         padding: 236px 262px 32px 32px;
     }
 
     &__item__left {
         grid-column: span 4;
         background-image: url(img/game_one.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all .5s;
+
+        &:hover {
+            cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+            outline: 3px solid #44D2FF;
+            border-radius: 16px;
+        }
     }
 
     &__item__middle {
         grid-column: span 4;
         background-image: url(img/game_two.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all .5s;
+
+        &:hover {
+            cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+            outline: 3px solid #44D2FF;
+            border-radius: 16px;
+        }
     }
 
     &__item__right {
         grid-column: span 4;
         background-image: url(img/game_three.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all .5s;
+
+        &:hover {
+            cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+            outline: 3px solid #44D2FF;
+            border-radius: 16px;
+        }
     }
 
     &__link {

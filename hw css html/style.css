@@ -36,13 +36,14 @@ body {
   padding-bottom: 32px;
 }
 .top__text {
+  width: 481px;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
   /* 177.778% */
-  padding-bottom: 44px;
+  padding-bottom: 43px;
 }
 .top__text-big {
   color: #FFF;
@@ -63,6 +64,9 @@ body {
   padding: 13.3px 74.3px;
   border: none;
 }
+.top__button:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+}
 
 .game {
   display: grid;
@@ -73,22 +77,46 @@ body {
   padding-bottom: 128px;
 }
 .game__item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 236px 262px 32px 32px;
 }
 .game__item__left {
   grid-column: span 4;
   background-image: url(img/game_one.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.game__item__left:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+  outline: 3px solid #44D2FF;
+  border-radius: 16px;
 }
 .game__item__middle {
   grid-column: span 4;
   background-image: url(img/game_two.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.game__item__middle:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+  outline: 3px solid #44D2FF;
+  border-radius: 16px;
 }
 .game__item__right {
   grid-column: span 4;
   background-image: url(img/game_three.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.game__item__right:hover {
+  cursor: url(/img/clarity_cursor-hand-line.svg), pointer;
+  outline: 3px solid #44D2FF;
+  border-radius: 16px;
 }
 .game__link {
   color: #FFF;
@@ -110,13 +138,17 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url(img/BG_top_mobile.jpg);
+    text-align: center;
   }
   .top__heading {
     font-size: 32px;
     padding-top: 238px;
   }
   .top__text {
+    width: 343px;
     font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 32px;
   }
   .top__text-big {
     font-size: 14px;
@@ -128,6 +160,15 @@ body {
     font-size: 24px;
   }
   .game__item {
+    border-radius: 16px;
+  }
+  .game__item__left {
     padding: 236px 248px 32px 17px;
+  }
+  .game__item__middle {
+    padding: 236px 244px 32px 14.5px;
+  }
+  .game__item__right {
+    padding: 236px 247px 32px 12px;
   }
 }/*# sourceMappingURL=style.css.map */
