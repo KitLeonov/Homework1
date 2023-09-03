@@ -42,8 +42,7 @@
 
 //Задание 6
 
-//for (let numberFriday = 2; numberFriday < 31; numberFriday++) {
-//    const element = array[index];
-//
+//for (let numberFriday = 2; numberFriday < 31; numberFriday += 7) {
+//    console.log(`Сегодня пятница, ${numberFriday}-е число. Необходимо подготовить отчет.`);
 //}
 
