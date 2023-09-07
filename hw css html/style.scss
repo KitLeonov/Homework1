@@ -140,4 +140,54 @@ body {
     }
 }
 
+.season {
+    background: #000915;
+    display: flex;
+    gap: 135px;
+
+    &__wrapper {
+        padding-top: 282px;
+        padding-bottom: 282px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    &__heading {
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        /* 177.778% */
+    }
+
+    &__button {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 30px;
+        background: #9C0332;
+        padding: 13px 90px 13px 73px;
+        border: none;
+    }
+
+    &__image {
+        padding-top: 233px;
+        padding-bottom: 233px;
+    }
+}
+
 @import 'mobile';

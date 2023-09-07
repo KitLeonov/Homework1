@@ -117,17 +117,17 @@
 let n = prompt('Введите номер месяца');
 
 function monthNumber(n) {
-    if (n > 0 && n < 2 && n === 12) {
+    if (n == 1 || n == 2 || n == 12) {
         return console.log('Это месяц зимы');
-    } else if (n === 3 || n === 4 || n === 5) {
+    } else if (n == 3 || n == 4 || n == 5) {
         return console.log('Это месяц весны');
-    } else if (n === 6 || n === 7 || n === 8) {
+    } else if (n == 6 || n == 7 || n == 8) {
         return console.log('Это месяц лета');
-    } else if (n === 9 || n === 10 || n === 11) {
+    } else if (n == 9 || n == 10 || n == 11) {
         return console.log('Это месяц осени');
     } else {
         return console.log('Такого месяца не существует');
     }
 }
 
-monthNumber(n);
+monthNumber();
