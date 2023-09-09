@@ -63,6 +63,15 @@ console.log(arr);
 
 exercise 7
 
+недоработано
+let n = prompt('Угадайте число');
+
+const arr = [9, 8, 7, 6, 5];
+
+arr.includes(n);
+
+console.log(alert('угадал'));
+
 
 exercise 8
 
