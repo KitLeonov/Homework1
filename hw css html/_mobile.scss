@@ -53,4 +53,40 @@
             padding: 236px 247px 32px 12px;
         }
     }
+
+    .season {
+        flex-direction: column;
+
+        &__wrapper {
+            padding-top: 51px;
+            padding-bottom: 0;
+            text-align: center;
+            align-items: center;
+        }
+
+        &__heading {
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &__text {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            /* 157.143% */
+        }
+
+        &__image {
+            padding-top: 0;
+            padding-bottom: 83px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+    }
 }

@@ -127,6 +127,51 @@ body {
   /* 133.333% */
 }
 
+.season {
+  background: #000915;
+  display: flex;
+  gap: 135px;
+}
+.season__wrapper {
+  padding-top: 282px;
+  padding-bottom: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.season__heading {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.season__text {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  /* 177.778% */
+}
+.season__button {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 30px;
+  background: #9C0332;
+  padding: 13px 90px 13px 73px;
+  border: none;
+}
+.season__image {
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+
 @media (min-width: 374px) and (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -170,5 +215,34 @@ body {
   }
   .game__item__right {
     padding: 236px 247px 32px 12px;
+  }
+  .season {
+    flex-direction: column;
+  }
+  .season__wrapper {
+    padding-top: 51px;
+    padding-bottom: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .season__heading {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .season__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    /* 157.143% */
+  }
+  .season__image {
+    padding-top: 0;
+    padding-bottom: 83px;
+  }
+  .season__img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
