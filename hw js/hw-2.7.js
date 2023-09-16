@@ -30,7 +30,10 @@ console.log(` Максимальное - ${maxNum}, минимальное - ${m
 
 //exersice 5
 
-console.log(Math.floor(Math.random() * 11));
+const getRandomInt = (max, min) => {
+    return Math.round(Math.random() * (max - min)) + min;
+}
+console.log(getRandomInt(1, 10));
 
 //exersice 6
 
@@ -43,8 +46,12 @@ function getRandomNumbers(num) {
 }
 console.log(getRandomNumbers(10));
 
-//exersice 7 пока не понял как решать 
+//exersice 7 есть сомнения по данной задаче
 
+function getRandomInte(num1, num2) {
+    return Math.round(Math.random() * (num1 - num2)) + num2;
+}
+console.log(getRandomInte(1, 5));
 
 
 
@@ -61,5 +68,53 @@ currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 
 
+//exersice 10
+
+function displayDate() {
+    const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+        "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+
+    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+    let myDate = new Date();
+    if (myDate.getHours() < 10) {
+        hour = '0' + hour;
+    }
+    if (myDate.getMinutes() < 10) {
+        minute = '0' + minute;
+    }
+    if (myDate.getSeconds() < 10) {
+        second = '0' + second;
+    }
+
+    let fullDate = `Дата: ${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()} - это ${days[myDate.getDay()]}`
+    let fullTime = `Время: ${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`
+
+    console.log(fullDate + '\n' + fullTime);
+}
+displayDate()
+
+//exersice 11
+
+
+function gameFruit() {
+
+    let arrayFruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+    arrayFruit = arrayFruit.sort(() => Math.random() - 0.5);
+
+    alert(arrayFruit);
+
+    let userFirstQuestion = prompt('Чему равняется первый элемент массива?').toLowerCase();
+    let userLastQuestion = prompt('Чему равняется последний элемент массива?').toLowerCase();
+    if (userFirstQuestion === arrayFruit[0].toLowerCase() && userLastQuestion === arrayFruit[arrayFruit.length - 1].toLowerCase()) {
+        alert('Поздравляю, вы победили!');
+    } else if (userFirstQuestion === arrayFruit[0].toLowerCase() || userLastQuestion === arrayFruit[arrayFruit.length - 1].toLowerCase()) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Вы ответили неверно');
+    }
+}
+gameFruit();
 
 
