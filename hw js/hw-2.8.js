@@ -16,6 +16,41 @@ console.log(people.sort(function
     } else return 0;
 }))
 
+//exersice 2
+
+function isPositive(num) {
+    if (num >= 0) {
+        return num;
+    }
+}
+
+function isMale(obj) {
+    if (obj.gender === 'male') {
+        return obj;
+    }
+}
+
+function filter(arr, ruleFunction) {
+    const newArr = [];
+
+    for (let i of arr) {
+        if (ruleFunction(i) !== underfined) {
+            newArr.push(i)
+        }
+    }
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const peoples = [
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
+];
+
+console.log(filter(peoples, isMale));
+
 //exersice 3
 
 const timer = (deadline) => {
@@ -33,3 +68,31 @@ const timer = (deadline) => {
 };
 
 timer(30);
+
+//exersice 4
+
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+}
+
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+})
+
+
+//exersice 5
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+
+        if (cb) { cb(); }
+    }, 1000)
+}
+
+function sayHi(name) {
+    console.log(`Привет, ${name}`);
+}
+
+delayForSecond(sayHi.bind(null, 'Глеб'))
+delayForSecond((cb) => { return sayHi('Глеб') })
