@@ -20,7 +20,9 @@ console.log(people.sort(function
 
 function isPositive(num) {
     if (num >= 0) {
-        return num;
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -34,7 +36,7 @@ function filter(arr, ruleFunction) {
     const newArr = [];
 
     for (let i of arr) {
-        if (ruleFunction(i) !== underfined) {
+        if (ruleFunction(i)) {
             newArr.push(i)
         }
     }
