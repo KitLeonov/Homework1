@@ -38,6 +38,8 @@ function filter(arr, ruleFunction) {
             newArr.push(i)
         }
     }
+
+    return newArr;
 }
 
 console.log(filter([3, -4, 1, 9], isPositive));
@@ -94,5 +96,4 @@ function sayHi(name) {
     console.log(`Привет, ${name}`);
 }
 
-delayForSecond(sayHi.bind(null, 'Глеб'))
-delayForSecond((cb) => { return sayHi('Глеб') })
+delayForSecond(() => { return sayHi('Глеб') });
