@@ -28,7 +28,7 @@ function isPositive(num) {
 
 function isMale(obj) {
     if (obj.gender === 'male') {
-        return obj;
+        return true;
     } else {
         return false;
     }
